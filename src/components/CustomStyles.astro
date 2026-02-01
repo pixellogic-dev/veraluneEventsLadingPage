@@ -1,24 +1,29 @@
 ---
-import '@fontsource-variable/playfair-display';
-import '@fontsource-variable/inter';
+import "@fontsource-variable/playfair-display";
+import "@fontsource-variable/inter";
 ---
 
 <style is:inline>
   :root {
-    --aw-font-sans: 'Inter Variable';
-    --aw-font-serif: 'Inter Variable';
-    --aw-font-heading: 'Playfair Display Variable', serif;
+    --aw-font-sans: "Inter Variable";
+    --aw-font-serif: "Inter Variable";
+    --aw-font-heading: "Playfair Display Variable", serif;
 
-    --aw-color-primary: rgb(18 59 73);        /* Verde medianoche */
-    --aw-color-secondary: rgb(24 72 92);      /* Verde profundo */
-    --aw-color-accent: rgb(199 162 110);      /* Dorado ceremonial */
+    --aw-color-primary: rgb(199 162 110); /* Dorado ceremonial */
+    --aw-color-secondary: rgb(160 138 85); /* Dorado ceremonial profundo */
+    --aw-color-accent: rgb(199 162 110); /* Dorado ceremonial */
 
     --aw-color-text-heading: rgb(18 18 18);
     --aw-color-text-default: rgb(32 32 32);
     --aw-color-text-muted: rgb(32 32 32 / 65%);
 
-    --aw-color-bg-page: rgb(247 240 232);     /* Lino */
-    --aw-color-bg-page-dark: rgb(10 30 38);
+    /* FONDO LIGHT (gradiente) */
+    --aw-color-bg-page: linear-gradient(
+      to bottom,
+      rgb(247 240 232) 0%,
+      rgb(238 230 220) 40%,
+      rgb(224 215 202) 100%
+    );
 
     ::selection {
       background-color: rgb(199 162 110);
@@ -27,26 +32,43 @@ import '@fontsource-variable/inter';
   }
 
   .dark {
-    --aw-font-sans: 'Inter Variable';
-    --aw-font-serif: 'Inter Variable';
-    --aw-font-heading: 'Playfair Display Variable', serif;
+    --aw-font-sans: "Inter Variable";
+    --aw-font-serif: "Inter Variable";
+    --aw-font-heading: "Playfair Display Variable", serif;
 
-    --aw-color-primary: rgb(199 162 110);     /* Dorado como CTA */
+    --aw-color-primary: rgb(199 162 110); /* Dorado como CTA */
     --aw-color-secondary: rgb(160 138 85);
     --aw-color-accent: rgb(199 173 110);
 
     --aw-color-text-heading: rgb(247 248 248);
     --aw-color-text-default: rgb(229 236 246);
     --aw-color-text-muted: rgb(229 236 246 / 66%);
-    --aw-color-bg-page: rgb(18 59 73);
+
+    /* FONDO DARK (gradiente) */
+    --aw-color-bg-page: linear-gradient(
+      to bottom,
+      rgb(18 59 73) 0%,
+      rgb(24 72 92) 45%,
+      rgb(10 30 38) 100%
+    );
 
     ::selection {
-       background-color: rgb(199 173 110);
+      background-color: rgb(199 173 110);
       color: rgb(10 30 38);
     }
   }
 
+  /* CLAVE: aplicar gradiente al html */
+  html {
+    background: var(--aw-color-bg-page);
+  }
+
+  /* Evitar que body lo pise */
+  body {
+    background: transparent;
+  }
+
   .font-heading {
-  letter-spacing: 0.015em;
-}
+    letter-spacing: 0.015em;
+  }
 </style>
