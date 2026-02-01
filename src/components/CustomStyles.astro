@@ -1,4 +1,5 @@
 ---
+import '@fontsource-variable/playfair-display';
 import '@fontsource-variable/inter';
 ---
 
@@ -6,7 +7,7 @@ import '@fontsource-variable/inter';
   :root {
     --aw-font-sans: 'Inter Variable';
     --aw-font-serif: 'Inter Variable';
-    --aw-font-heading: 'Inter Variable';
+    --aw-font-heading: 'Playfair Display Variable', serif;
 
     --aw-color-primary: rgb(18 59 73);        /* Verde medianoche */
     --aw-color-secondary: rgb(24 72 92);      /* Verde profundo */
@@ -28,7 +29,7 @@ import '@fontsource-variable/inter';
   .dark {
     --aw-font-sans: 'Inter Variable';
     --aw-font-serif: 'Inter Variable';
-    --aw-font-heading: 'Inter Variable';
+    --aw-font-heading: 'Playfair Display Variable', serif;
 
     --aw-color-primary: rgb(199 162 110);     /* Dorado como CTA */
     --aw-color-secondary: rgb(160 138 85);
@@ -44,4 +45,8 @@ import '@fontsource-variable/inter';
       color: rgb(10 30 38);
     }
   }
+
+  .font-heading {
+  letter-spacing: 0.015em;
+}
 </style>
