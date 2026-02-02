@@ -44,7 +44,7 @@ export const headerData = {
     {
       text: "Conversemos",
       href: "#contact",
-      variant: "primary",
+      variant: "primary" as const,
     },
   ],
 };
