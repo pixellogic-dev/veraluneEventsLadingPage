@@ -112,6 +112,10 @@ export const footerData = {
     },
   ],
   footNote: `
-    Made by <a class="text-blue-600 underline dark:text-muted" href="https://www.pixellogic.com.do"> PixeLogic</a> · All rights reserved.
-  `,
+  © ${new Date().getFullYear()} Crafted by
+  <a class="underline hover:opacity-80 dark:text-muted" href="https://www.pixellogic.com.do">
+    PixelLogic
+  </a>.
+  All rights reserved.
+`,
 };
