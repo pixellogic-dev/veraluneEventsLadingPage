@@ -7,6 +7,10 @@ import Steps from "~/components/widgets/Steps.astro";
 import Content from "~/components/widgets/Experiences.astro";
 import FAQs from "~/components/widgets/FAQs.astro";
 import ContactUs from "~/components/widgets/Contact.astro";
+import decoracionTematica from "~/assets/images/decoracion-tematica.jpg";
+import propuesta from "~/assets/images/propuesta.jpg";
+import babyshower from "~/assets/images/babyshower.jpg";
+import proposal from "~/assets/videos/proposal-animation.mp4";
 
 const metadata = {
   title:
@@ -76,44 +80,44 @@ const metadata = {
   <Features
     id="services"
     tagline=""
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022, 2023 and 2024."
+    title="Cada celebración, diseñada con intención"
+    subtitle="Acompañamos cada etapa de tu evento con planificación, diseño y ejecución impecable, creando experiencias que se sienten y se recuerdan."
     items={[
       {
-        title: "Astro + Tailwind CSS Integration",
+        title: "Bodas & Wedding Planner",
         description:
-          "A seamless integration between two great frameworks that offer high productivity, performance and versatility.",
-        icon: "tabler:brand-tailwind",
+          "Planificación integral de bodas, desde la conceptualización hasta el gran día. Coordinamos cada detalle para que vivas tu gran día con tranquilidad, emoción y elegancia.",
+        icon: "tabler:heart",
       },
       {
-        title: "Ready-to-use Components",
+        title: "Decoración y ambientación",
         description:
-          "Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...",
-        icon: "tabler:components",
+          "Diseñamos espacios únicos a través de decoración personalizada, camuflajes y estructuras que transforman cualquier lugar en una experiencia visual memorable.",
+        icon: "tabler:palette",
       },
       {
-        title: "Best Practices",
+        title: "Baby Shower",
         description:
-          "Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.",
-        icon: "tabler:list-check",
+          "Creamos celebraciones delicadas y emotivas para dar la bienvenida a una nueva vida, cuidando cada detalle de la ambientación y el concepto.",
+        icon: "tabler:baby-carriage",
       },
       {
-        title: "Excellent Page Speed",
+        title: "Revelación de género",
         description:
-          "Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.",
-        icon: "tabler:rocket",
+          "Diseñamos momentos llenos de emoción y sorpresa, creando experiencias únicas para compartir una noticia inolvidable con quienes más amas.",
+        icon: "tabler:sparkles",
       },
       {
-        title: "Search Engine Optimization (SEO)",
+        title: "Mesas de dulces",
         description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: "tabler:arrows-right-left",
+          "Mesas de dulces diseñadas para complementar la temática del evento, cuidando cada detalle para lograr una presentación armónica y encantadora.",
+        icon: "tabler:candy",
       },
       {
-        title: "Open to new ideas and contributions",
+        title: "Maestría de ceremonias",
         description:
-          "Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.",
-        icon: "tabler:bulb",
+          "Conducimos tu evento con profesionalismo y fluidez, cuidando el ritmo y la emoción de cada momento para que todo fluya de forma natural.",
+        icon: "tabler:microphone-2",
       },
     ]}
   />
@@ -125,36 +129,42 @@ const metadata = {
     id="experiences"
     tagline=""
     tagline=""
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    title="Experiencias que se sienten desde el primer instante"
     items={[
       {
-        title: "Built on top of Astro 5.0",
+        title: "Conceptos creados a tu medida",
         description:
-          "Benefiting from the performance and developer-friendly features of this modern static site generator.",
+          "Diseñamos cada celebración desde cero, cuidando colores, estilos y detalles para reflejar tu esencia y la de tu evento.",
       },
       {
-        title: "Styled using Tailwind CSS",
+        title: "Decoración con intención",
         description:
-          "Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.",
+          "Cada elemento tiene un propósito: transformar el espacio y crear una atmósfera que se sienta especial, armónica y memorable.",
       },
       {
-        title: "Cross-browser compatibility",
+        title: "Detalles que cuentan historias",
         description:
-          "Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.",
+          "Nos enfocamos en esos pequeños gestos visuales que sorprenden, emocionan y hacen que tu evento se recuerde para siempre.",
       },
     ]}
     image={{
-      src: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      alt: "Colorful Image",
+      src: decoracionTematica,
+      alt: "Decoración temática y ambientación de eventos Vera Lune",
     }}
   >
     <Fragment slot="content">
-      <h3
-        class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2"
-      >
-        Building on modern foundations
-      </h3>
-      Gain a competitive advantage by incorporating industry leading practices
+      <div class="space-y-4">
+        <h3
+          class="text-4xl sm:text-2xl font-heading font-old tracking-[0.05em] text-heading dark:text-white"
+        >
+          Diseñamos atmósferas que cuentan historias
+        </h3>
+
+        <p class="text-lg leading-relaxed text-muted dark:text-slate-400">
+          Cada celebración tiene una intención, una emoción y una historia que
+          merece ser contada a través del diseño.
+        </p>
+      </div>
     </Fragment>
 
     <Fragment slot="bg">
@@ -162,38 +172,39 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <!-- ontent Experiences 2 **************** -->
+  <!-- Content Experiences 2 **************** -->
 
   <Content
     isAfterContent
     items={[
       {
-        title: "High level of customization",
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+        title: "Propuestas de matrimonio únicas",
+        description: `Diseñamos propuestas personalizadas que cuentan su historia, cuidando cada detalle para crear el momento perfecto del “sí”.`,
       },
       {
-        title: "Multiple layout possibilities",
+        title: "Wedding planning con propósito",
         description:
-          "Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.",
+          "Acompañamos cada etapa del camino, desde la propuesta hasta el gran día, con una planificación impecable y sin estrés.",
       },
       {
-        title: "Fully responsive design",
+        title: "Momentos íntimos que se recuerdan",
         description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
+          "Creamos experiencias románticas y celebraciones especiales que conectan emociones y se convierten en recuerdos eternos.",
       },
       {
-        title: "Integration of media",
+        title: "Diseño y ambientación con sensibilidad",
         description:
-          "Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.",
+          "Cada espacio es pensado para reflejar amor, elegancia y autenticidad, alineado a su visión y estilo personal.",
       },
     ]}
     image={{
-      src: "https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80",
-      alt: "Blueprint Image",
+      src: propuesta,
+      alt: "Propuesta de matrimonio romántica",
     }}
   >
     <Fragment slot="content"
-      >Ensure your online presence truly represents you.</Fragment
+      >Acompañamos historias de amor desde el primer “¿y si…?” hasta el “sí,
+      acepto”.</Fragment
     >
 
     <Fragment slot="bg">
@@ -208,31 +219,33 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: "Enhanced user engagement",
+        title: "Baby showers llenos de ternura",
         description:
-          "Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.",
+          "Creamos celebraciones delicadas y emotivas para dar la bienvenida a una nueva vida, cuidando cada detalle con amor.",
       },
       {
-        title: "Continuous improvement",
+        title: "Revelaciones de género memorables",
         description:
-          "Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.",
+          "Diseñamos experiencias llenas de emoción donde el gran descubrimiento se convierte en un recuerdo inolvidable.",
       },
       {
-        title: "Time and resource efficiency",
+        title: "Celebraciones pensadas para compartir",
         description:
-          "Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.",
+          "Creamos ambientes donde familia y amigos se sienten parte de un momento especial, íntimo y lleno de alegría.",
       },
       {
-        title: "Community support",
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
+        title: "Planificación sin preocupaciones",
+        description: `Nos encargamos de la organización y coordinación para que solo te concentres en disfrutar cada instante.`,
       },
     ]}
     image={{
-      src: "https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      alt: "Astronauts Image",
+      src: babyshower,
+      alt: "Baby shower y revelación de género elegante",
     }}
   >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
+    <Fragment slot="content"
+      >Celebramos los comienzos más dulces con experiencias llenas de emoción.</Fragment
+    >
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -242,33 +255,45 @@ const metadata = {
   <!-- Content Experiences 4 ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="Un proceso cuidado, diseñado para acompañarte en cada paso."
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: 'Paso 1: <span class="font-medium">Conectamos contigo</span>',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: "tabler:package",
+          "Escuchamos tu historia, tus ideas y lo que sueñas para ese momento especial. Cada experiencia comienza con una conversación honesta y cercana.",
+        icon: "tabler:heart-handshake",
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
+        title:
+          'Paso 2: <span class="font-medium">Diseñamos la experiencia</span>',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: "tabler:letter-case",
+          "Creamos una propuesta personalizada que refleja tu esencia, cuidando cada detalle del diseño, la ambientación y la planificación.",
+        icon: "tabler:sparkles",
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title:
+          'Paso 3: <span class="font-medium">Planificamos y coordinamos</span>',
         description:
-          "Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.",
-        icon: "tabler:paint",
+          "Nos encargamos de la organización, tiempos y ejecución para que vivas el proceso con tranquilidad y confianza.",
+        icon: "tabler:calendar-check",
       },
       {
-        title: "Ready!",
-        icon: "tabler:check",
+        title: "El gran momento",
+        description:
+          "Disfrutas la experiencia mientras nosotros cuidamos cada detalle para que todo fluya de manera impecable.",
+        icon: "tabler:stars",
       },
     ]}
+    classes={{
+      items: {
+        icon: "flex h-9 w-9 items-center justify-center rounded-full border border-accent/40 text-accent",
+        line: "bg-gradient-to-b from-accent/40 to-transparent",
+        title: "font-heading text-heading",
+        description: "text-muted",
+      },
+    }}
     image={{
-      src: "https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+      src: proposal,
       alt: "Steps image",
     }}
   />

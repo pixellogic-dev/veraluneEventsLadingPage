@@ -1,4 +1,4 @@
-import { getPermalink, getAsset } from "./utils/permalinks";
+import { getPermalink } from "./utils/permalinks";
 
 export const headerData = {
   links: [
@@ -44,7 +44,7 @@ export const headerData = {
     {
       text: "Conversemos",
       href: "#contact",
-      variant: "primary",
+      variant: "primary" as const,
     },
   ],
 };
@@ -101,17 +101,29 @@ export const footerData = {
     { text: "Privacy Policy", href: getPermalink("/privacy") },
   ],
   socialLinks: [
-    { ariaLabel: "X", icon: "tabler:brand-x", href: "#" },
-    { ariaLabel: "Instagram", icon: "tabler:brand-instagram", href: "#" },
-    { ariaLabel: "Facebook", icon: "tabler:brand-facebook", href: "#" },
-    { ariaLabel: "RSS", icon: "tabler:rss", href: getAsset("/rss.xml") },
     {
+      ariaLabel: "WhatsApp",
+      icon: "tabler:brand-whatsapp",
+      href: "https://www.instagram.com/veralune_events/",
+    },
+    {
+      ariaLabel: "Instagram",
+      icon: "tabler:brand-instagram",
+      href: "https://www.instagram.com/veralune_events/",
+    },
+    /*{ ariaLabel: "Facebook", icon: "tabler:brand-facebook", href: "#" },*/
+    /*{ ariaLabel: "RSS", icon: "tabler:rss", href: getAsset("/rss.xml") },*/
+    /*{
       ariaLabel: "Github",
       icon: "tabler:brand-github",
       href: "https://github.com/arthelokyo/astrowind",
-    },
+    },*/
   ],
   footNote: `
-    Made by <a class="text-blue-600 underline dark:text-muted" href="https://www.pixellogic.com.do"> PixeLogic</a> · All rights reserved.
-  `,
+  © ${new Date().getFullYear()} Crafted by
+  <a class="underline hover:opacity-80 dark:text-muted" href="https://www.pixellogic.com.do">
+    PixelLogic
+  </a>.
+  All rights reserved.
+`,
 };
