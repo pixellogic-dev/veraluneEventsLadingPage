@@ -1,0 +1,442 @@
+---
+import Layout from "~/layouts/PageLayout.astro";
+import Hero from "~/components/widgets/Hero.astro";
+import Features from "~/components/widgets/Services.astro";
+import Features2 from "~/components/widgets/Us.astro";
+import Steps from "~/components/widgets/Steps.astro";
+import Content from "~/components/widgets/Experiences.astro";
+import FAQs from "~/components/widgets/FAQs.astro";
+import ContactUs from "~/components/widgets/Contact.astro";
+import decoracionTematica from "~/assets/images/decoracion-tematica.jpg";
+import propuesta from "~/assets/images/propuesta.jpg";
+import babyshower from "~/assets/images/babyshower.jpg";
+import proposal from "~/assets/videos/proposal-animation.mp4";
+
+const metadata = {
+  title:
+    "AstroWind — Free template for creating websites with Astro + Tailwind CSS",
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero ******************* -->
+
+  <Hero
+    actions={[
+      { variant: "primary", text: "conversemos", href: "#contact" },
+      { variant: "secondary", text: "ver experiencias", href: "#experiences" },
+    ]}
+  >
+    <Fragment slot="title">
+      <div class="flex flex-col items-center gap-1">
+        <span
+          class="font-heading italic font-normal text-4xl md:text-5xl text-heading"
+        >
+          Transformamos
+        </span>
+
+        <span class="font-heading font-bold text-5xl md:text-6xl text-heading">
+          instantes
+        </span>
+
+        <span
+          class="font-heading italic font-bold text-5xl md:text-6xl text-accent mt-1"
+        >
+          en memorias
+        </span>
+        <span class="font-heading font-bold text-5xl md:text-6xl text-accent">
+          eternas
+          <span
+            class="mt-4 block w-20 h-[1px] bg-accent mx-auto opacity-40"
+            aria-hidden="true"></span>
+        </span>
+      </div>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <div class="max-w-xl mx-auto mb-8 space-y-3">
+        <p class="text-base font-light md:text-lg leading-relaxed text-default">
+          <span class="font-semibold text-heading dark:text-accent">
+            Vera Lune Events
+          </span>{" "}
+          es una empresa certificada en
+          <span class="font-bold text-heading">
+            {" "}planificación de eventos y bodas
+          </span>
+          , especializada en diseño, ambientación y producción integral.
+        </p>
+
+        <p class="text-sm md:text-base leading-relaxed text-muted">
+          Creamos celebraciones únicas a través de decoración, camuflajes, mesas
+          de dulces y maestría de ceremonias.
+        </p>
+      </div>
+    </Fragment>
+  </Hero>
+
+  <!-- Features Services *************** -->
+
+  <Features
+    id="services"
+    tagline=""
+    title="Cada celebración, diseñada con intención"
+    subtitle="Acompañamos cada etapa de tu evento con planificación, diseño y ejecución impecable, creando experiencias que se sienten y se recuerdan."
+    items={[
+      {
+        title: "Bodas & Wedding Planner",
+        description:
+          "Planificación integral de bodas, desde la conceptualización hasta el gran día. Coordinamos cada detalle para que vivas tu gran día con tranquilidad, emoción y elegancia.",
+        icon: "tabler:heart",
+      },
+      {
+        title: "Decoración y ambientación",
+        description:
+          "Diseñamos espacios únicos a través de decoración personalizada, camuflajes y estructuras que transforman cualquier lugar en una experiencia visual memorable.",
+        icon: "tabler:palette",
+      },
+      {
+        title: "Baby Shower",
+        description:
+          "Creamos celebraciones delicadas y emotivas para dar la bienvenida a una nueva vida, cuidando cada detalle de la ambientación y el concepto.",
+        icon: "tabler:baby-carriage",
+      },
+      {
+        title: "Revelación de género",
+        description:
+          "Diseñamos momentos llenos de emoción y sorpresa, creando experiencias únicas para compartir una noticia inolvidable con quienes más amas.",
+        icon: "tabler:sparkles",
+      },
+      {
+        title: "Mesas de dulces",
+        description:
+          "Mesas de dulces diseñadas para complementar la temática del evento, cuidando cada detalle para lograr una presentación armónica y encantadora.",
+        icon: "tabler:candy",
+      },
+      {
+        title: "Maestría de ceremonias",
+        description:
+          "Conducimos tu evento con profesionalismo y fluidez, cuidando el ritmo y la emoción de cada momento para que todo fluya de forma natural.",
+        icon: "tabler:microphone-2",
+      },
+    ]}
+  />
+
+  <!-- Content Experiences 1 **************** -->
+
+  <Content
+    isReversed
+    id="experiences"
+    tagline=""
+    tagline=""
+    title="Experiencias que se sienten desde el primer instante"
+    items={[
+      {
+        title: "Conceptos creados a tu medida",
+        description:
+          "Diseñamos cada celebración desde cero, cuidando colores, estilos y detalles para reflejar tu esencia y la de tu evento.",
+      },
+      {
+        title: "Decoración con intención",
+        description:
+          "Cada elemento tiene un propósito: transformar el espacio y crear una atmósfera que se sienta especial, armónica y memorable.",
+      },
+      {
+        title: "Detalles que cuentan historias",
+        description:
+          "Nos enfocamos en esos pequeños gestos visuales que sorprenden, emocionan y hacen que tu evento se recuerde para siempre.",
+      },
+    ]}
+    image={{
+      src: decoracionTematica,
+      alt: "Decoración temática y ambientación de eventos Vera Lune",
+    }}
+  >
+    <Fragment slot="content">
+      <div class="space-y-4">
+        <h3
+          class="text-4xl sm:text-2xl font-heading font-old tracking-[0.05em] text-heading dark:text-white"
+        >
+          Diseñamos atmósferas que cuentan historias
+        </h3>
+
+        <p class="text-lg leading-relaxed text-muted dark:text-slate-400">
+          Cada celebración tiene una intención, una emoción y una historia que
+          merece ser contada a través del diseño.
+        </p>
+      </div>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Experiences 2 **************** -->
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: "Propuestas de matrimonio únicas",
+        description: `Diseñamos propuestas personalizadas que cuentan su historia, cuidando cada detalle para crear el momento perfecto del “sí”.`,
+      },
+      {
+        title: "Wedding planning con propósito",
+        description:
+          "Acompañamos cada etapa del camino, desde la propuesta hasta el gran día, con una planificación impecable y sin estrés.",
+      },
+      {
+        title: "Momentos íntimos que se recuerdan",
+        description:
+          "Creamos experiencias románticas y celebraciones especiales que conectan emociones y se convierten en recuerdos eternos.",
+      },
+      {
+        title: "Diseño y ambientación con sensibilidad",
+        description:
+          "Cada espacio es pensado para reflejar amor, elegancia y autenticidad, alineado a su visión y estilo personal.",
+      },
+    ]}
+    image={{
+      src: propuesta,
+      alt: "Propuesta de matrimonio romántica",
+    }}
+  >
+    <Fragment slot="content"
+      >Acompañamos historias de amor desde el primer “¿y si…?” hasta el “sí,
+      acepto”.</Fragment
+    >
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Experiences 3 **************** -->
+
+  <Content
+    isReversed
+    isAfterContent
+    items={[
+      {
+        title: "Baby showers llenos de ternura",
+        description:
+          "Creamos celebraciones delicadas y emotivas para dar la bienvenida a una nueva vida, cuidando cada detalle con amor.",
+      },
+      {
+        title: "Revelaciones de género memorables",
+        description:
+          "Diseñamos experiencias llenas de emoción donde el gran descubrimiento se convierte en un recuerdo inolvidable.",
+      },
+      {
+        title: "Celebraciones pensadas para compartir",
+        description:
+          "Creamos ambientes donde familia y amigos se sienten parte de un momento especial, íntimo y lleno de alegría.",
+      },
+      {
+        title: "Planificación sin preocupaciones",
+        description: `Nos encargamos de la organización y coordinación para que solo te concentres en disfrutar cada instante.`,
+      },
+    ]}
+    image={{
+      src: babyshower,
+      alt: "Baby shower y revelación de género elegante",
+    }}
+  >
+    <Fragment slot="content"
+      >Celebramos los comienzos más dulces con experiencias llenas de emoción.</Fragment
+    >
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Experiences 4 ****************** -->
+
+  <Steps
+    title="Un proceso cuidado, diseñado para acompañarte en cada paso."
+    items={[
+      {
+        title: 'Paso 1: <span class="font-medium">Conectamos contigo</span>',
+        description:
+          "Escuchamos tu historia, tus ideas y lo que sueñas para ese momento especial. Cada experiencia comienza con una conversación honesta y cercana.",
+        icon: "tabler:heart-handshake",
+      },
+      {
+        title:
+          'Paso 2: <span class="font-medium">Diseñamos la experiencia</span>',
+        description:
+          "Creamos una propuesta personalizada que refleja tu esencia, cuidando cada detalle del diseño, la ambientación y la planificación.",
+        icon: "tabler:sparkles",
+      },
+      {
+        title:
+          'Paso 3: <span class="font-medium">Planificamos y coordinamos</span>',
+        description:
+          "Nos encargamos de la organización, tiempos y ejecución para que vivas el proceso con tranquilidad y confianza.",
+        icon: "tabler:calendar-check",
+      },
+      {
+        title: "El gran momento",
+        description:
+          "Disfrutas la experiencia mientras nosotros cuidamos cada detalle para que todo fluya de manera impecable.",
+        icon: "tabler:stars",
+      },
+    ]}
+    classes={{
+      items: {
+        icon: "flex h-9 w-9 items-center justify-center rounded-full border border-accent/40 text-accent",
+        line: "bg-gradient-to-b from-accent/40 to-transparent",
+        title: "font-heading text-heading",
+        description: "text-muted",
+      },
+    }}
+    image={{
+      src: proposal,
+      alt: "Steps image",
+    }}
+  />
+
+  <!-- US ************** -->
+
+  <Features2
+    id="us"
+    tagline=""
+    title="Most used widgets"
+    subtitle="Provides frequently used components for building websites using Tailwind CSS"
+    items={[
+      {
+        title: "Headers",
+        description:
+          "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
+        icon: "flat-color-icons:template",
+      },
+      {
+        title: "Heros",
+        description:
+          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
+        icon: "flat-color-icons:gallery",
+      },
+      {
+        title: "Features",
+        description:
+          "Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!",
+        icon: "flat-color-icons:approval",
+      },
+      {
+        title: "Content",
+        description:
+          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
+        icon: "flat-color-icons:document",
+      },
+      {
+        title: "Call-to-Action",
+        description:
+          "That enthusiastic friend who's always urging, \"Do it! Do it!\"? Yeah, that's this button nudging you towards adventure.",
+        icon: "flat-color-icons:advertising",
+      },
+      {
+        title: "Pricing",
+        description:
+          "Behold the dessert menu of the website world. Tempting choices await, can you resist?",
+        icon: "flat-color-icons:currency-exchange",
+      },
+      {
+        title: "Testimonial",
+        description:
+          "Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.",
+        icon: "flat-color-icons:voice-presentation",
+      },
+      {
+        title: "Contact",
+        description:
+          "Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.",
+        icon: "flat-color-icons:business-contact",
+      },
+      {
+        title: "Footers",
+        description:
+          "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
+        icon: "flat-color-icons:database",
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Frequently Asked Questions"
+    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
+    tagline=""
+    classes={{ container: "max-w-6xl" }}
+    items={[
+      {
+        title: "Why AstroWind?",
+        description:
+          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+      },
+      {
+        title: "What do I need to start?",
+        description:
+          "Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.",
+      },
+      {
+        title: "How to install the Astro + Tailwind CSS template?",
+        description:
+          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+      },
+      {
+        title: "What's something that you don't understand?",
+        description:
+          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+      },
+      {
+        title: "What is something that you would like to try again?",
+        description:
+          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+      },
+      {
+        title:
+          "If you could only ask one question to each person you meet, what would that question be?",
+        description:
+          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+      },
+    ]}
+  />
+
+  <!-- ContactForm Widget *********** -->
+  <ContactUs
+    id="contact"
+    tagline=""
+    title="Comencemos tu experiencia"
+    subtitle="Cuéntanos sobre tu evento y creemos juntos una experiencia inolvidable."
+    inputs={[
+      {
+        type: "text",
+        name: "name",
+        label: "Nombre",
+        placeholder: "Juan Perez",
+      },
+      {
+        type: "email",
+        name: "email",
+        label: "Correo electrónico",
+        placeholder: "juanperez@correo.com",
+      },
+    ]}
+    textarea={{
+      label: "Mensaje",
+      placeholder: "Cuéntanos qué tipo de evento estás planeando…",
+    }}
+    disclaimer={{
+      label:
+        "Al enviar este formulario aceptas el tratamiento de tus datos personales.",
+    }}
+    description="Nuestro equipo responde en menos de 24 horas hábiles."
+  />
+</Layout>
