@@ -32,6 +32,10 @@ export const headerData = {
       href: getPermalink("/#experiences"),
     },
     {
+      text: "Cómo trabajamos",
+      href: getPermalink("/#comoTrabajamos"),
+    },
+    {
       text: "Nosotros",
       href: getPermalink("/#us"),
     },
@@ -52,47 +56,51 @@ export const headerData = {
 export const footerData = {
   links: [
     {
-      title: "Product",
+      title: "Servicios",
       links: [
-        { text: "Features", href: "#" },
-        { text: "Security", href: "#" },
-        { text: "Team", href: "#" },
-        { text: "Enterprise", href: "#" },
-        { text: "Customer stories", href: "#" },
-        { text: "Pricing", href: "#" },
-        { text: "Resources", href: "#" },
+        { text: "Bodas", href: "#services" },
+        { text: "Propuestas de matrimonio", href: "#services" },
+        { text: "Decoración & ambientación", href: "#services" },
+        { text: "Mesas de dulces", href: "#services" },
+        { text: "Baby showers & Revelación de género", href: "#services" },
+        { text: "Maestría de ceremonias", href: "#services" },
       ],
     },
     {
-      title: "Platform",
+      title: "Nuestro enfoque",
       links: [
-        { text: "Developer API", href: "#" },
-        { text: "Partners", href: "#" },
-        { text: "Atom", href: "#" },
-        { text: "Electron", href: "#" },
-        { text: "AstroWind Desktop", href: "#" },
+        { text: "Cómo trabajamos", href: "#comoTrabajamos" },
+        { text: "Experiencias", href: "#experiences" },
+        { text: "Proceso de planificación", href: "#comoTrabajamos" },
+        { text: "Preguntas frecuentes", href: "#FAQs" },
       ],
     },
     {
-      title: "Support",
+      title: "Redes Sociales",
       links: [
-        { text: "Docs", href: "#" },
-        { text: "Community Forum", href: "#" },
-        { text: "Professional Services", href: "#" },
-        { text: "Skills", href: "#" },
-        { text: "Status", href: "#" },
+        {
+          text: "WhatsApp",
+          href: "https://api.whatsapp.com/send/?phone=18092651238&text&type=phone_number&app_absent=0&utm_source=ig",
+        },
+        {
+          text: "Instagram",
+          href: "https://www.instagram.com/veralune_events/",
+        },
       ],
     },
     {
-      title: "Company",
+      title: "Contacto",
       links: [
-        { text: "About", href: "#" },
-        { text: "Blog", href: "#" },
-        { text: "Careers", href: "#" },
-        { text: "Press", href: "#" },
-        { text: "Inclusion", href: "#" },
-        { text: "Social Impact", href: "#" },
-        { text: "Shop", href: "#" },
+        {
+          text: "📞&nbsp;+1&nbsp;(809)&nbsp;265-1238",
+          href: "tel:+18092651238",
+          ariaLabel: "Llamar a Vera Lune",
+        },
+        {
+          text: "✉️&nbsp;hola@veraluneevents.com",
+          href: "mailto:hola@veraluneevents.com",
+          ariaLabel: "Correo Vera Lune",
+        },
       ],
     },
   ],
@@ -104,7 +112,7 @@ export const footerData = {
     {
       ariaLabel: "WhatsApp",
       icon: "tabler:brand-whatsapp",
-      href: "https://www.instagram.com/veralune_events/",
+      href: "https://api.whatsapp.com/send/?phone=18092651238&text&type=phone_number&app_absent=0&utm_source=ig",
     },
     {
       ariaLabel: "Instagram",

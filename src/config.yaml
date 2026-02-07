@@ -1,5 +1,5 @@
 site:
-  name: VERA LUNE EVENTS
+  name: Vera Lune Events
   site: "https://astrowind.vercel.app"
   base: "/"
   trailingSlash: false
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: "%s — AstroWind"
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: Vera Lune Events
+    template: "%s — Vera Lune Events"
+  description: "\U0001F680 ✨ Diseñamos y planificamos experiencias memorables para bodas, propuestas, celebraciones y eventos especiales, cuidando cada detalle con sensibilidad y estilo."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: VERA LUNE EVENTS
+    site_name: Vera Lune Events
     images:
       - url: "~/assets/images/default.png"
         width: 1200

@@ -23,14 +23,14 @@ const {
     >
       {tagline && (
         <p
-          class="text-base text-secondary dark:text-blue-200 font-bold tracking-wide uppercase"
+          class="text-base text-secondary dark:text-blue-200 font-bold tracking-wide"
           set:html={tagline}
         />
       )}
       {title && (
         <h2
           class={twMerge(
-            "font-bold leading-tighter tracking-tighter font-heading text-heading text-3xl font-heading uppercase tracking-[0.05em] font-old",
+            "font-bold leading-tighter tracking-tighter font-heading text-heading text-3xl font-heading tracking-[0.05em]",
             titleClass,
           )}
           set:html={title}
@@ -40,7 +40,7 @@ const {
       {subtitle && (
         <p
           class={twMerge(
-            "mt-4 text-muted font-heading tracking-[0.03em] font-old",
+            "mt-4 text-muted font-heading tracking-[0.03em]",
             subtitleClass,
           )}
           set:html={subtitle}
