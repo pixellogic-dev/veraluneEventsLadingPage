@@ -18,7 +18,7 @@ metadata:
   openGraph:
     site_name: Vera Lune Events
     images:
-      - url: "/default.png"
+      - url: "~/assets/images/default.png"
         width: 1200
         height: 628
     type: website
