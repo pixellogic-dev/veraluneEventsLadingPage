@@ -1,6 +1,6 @@
 site:
   name: Vera Lune Events
-  site: "https://astrowind.vercel.app"
+  site: "https://veralune-events-lading-page.vercel.app"
   base: "/"
   trailingSlash: false
 
@@ -18,7 +18,7 @@ metadata:
   openGraph:
     site_name: Vera Lune Events
     images:
-      - url: "~/assets/images/default.png"
+      - url: "/default.png"
         width: 1200
         height: 628
     type: website
