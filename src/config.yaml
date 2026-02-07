@@ -11,7 +11,7 @@ metadata:
   title:
     default: Vera Lune Events
     template: "%s — Vera Lune Events"
-  description: "\U0001F680 ✨ Diseñamos y planificamos experiencias memorables para bodas, propuestas, celebraciones y eventos especiales, cuidando cada detalle con sensibilidad y estilo."
+  description: "✨ Diseñamos y planificamos experiencias memorables para bodas, propuestas, celebraciones y eventos especiales, cuidando cada detalle con sensibilidad y estilo."
   robots:
     index: true
     follow: true
